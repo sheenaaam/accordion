@@ -125,6 +125,11 @@
         header.addEventListener("click", () => {
           const item = header.parentElement; 
         })
+
+          items.forEach((i) => {
+            i.classList.remove("active");
+            i.querySelector(".accordion-content").style.maxHeight = 0;
+          });
       });
 
 
