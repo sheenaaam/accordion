@@ -119,6 +119,15 @@
       const header = document.querySelectorAll(".accordion-header");
       const item =document.querySelectorAll(".accordion-item");
       const openAllButton = document.getElementById("openAllButton");
+
+        
+      headers.forEach((header) => {
+        header.addEventListener("click", () => {
+          const item = header.parentElement; 
+        })
+      });
+
+
     </script>
   
   </body>
