@@ -134,6 +134,13 @@
           item.classList.add("active");
           item.querySelector(".accordion-content").style.maxHeight = "81px";
           });
+
+           openAllBtn.addEventListener("click", () => {
+        items.forEach((item) => {
+          item.classList.add("active");
+          item.querySelector(".accordion-content").style.maxHeight = "81px";
+        });
+      });
       
       
 
